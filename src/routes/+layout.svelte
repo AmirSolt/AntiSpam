@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>Enterprise</title>
+	<title>Caspear</title>
 	<link rel="icon" href="https://fav.farm/🔥" />
 </svelte:head>
 
