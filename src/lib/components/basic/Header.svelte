@@ -7,16 +7,20 @@
 	$: user = $page.data.user
 </script>
 
+
+
+
+
 <AppBar>
 	<svelte:fragment slot="lead">
 		<a class="flex gap-1" href="/">
-			<Flame /> Enterprise
+			<Flame /> Caspear
 		</a>
 	</svelte:fragment>
 
 	<svelte:fragment slot="trail">
 		<a href="/pricing">Pricing</a>
-		<a href="/authenticated">Authed</a>
+		<a href="/profile">Authed</a>
 		{#if user}
 			<form method="POST" action="/logout" use:enhance>
 				<button type="submit">Sign out</button>

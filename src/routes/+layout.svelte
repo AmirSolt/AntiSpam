@@ -1,5 +1,7 @@
 <script lang="ts">
-	import Heading from './heading.svelte'
+	import Header from '$lib/components/basic/Header.svelte'
+	import Footer from '$lib/components/basic/Footer.svelte';
+	import { AppShell } from '@skeletonlabs/skeleton';
 
 	import '@skeletonlabs/skeleton/themes/theme-crimson.css'
 	import '@skeletonlabs/skeleton/styles/all.css'
@@ -11,6 +13,27 @@
 	<link rel="icon" href="https://fav.farm/🔥" />
 </svelte:head>
 
-<Heading />
 
-<slot />
+
+
+
+
+
+
+<AppShell>
+
+	<svelte:fragment slot="header">
+		<header>
+			<Header />
+		</header>
+	</svelte:fragment>
+
+	<slot />
+
+	<svelte:fragment slot="footer">
+		<footer>
+			<Footer />
+		</footer>
+		
+	</svelte:fragment>
+</AppShell>
