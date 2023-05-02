@@ -3,7 +3,7 @@
 		<span
 			class=" bg-gradient-to-r from-blue-400 to-purple-400  box-decoration-clone bg-clip-text text-7xl font-bold text-transparent"
 		>
-			Anti Spam Talks
+			Anti Spam Media
 		</span>
 	</h1>
 

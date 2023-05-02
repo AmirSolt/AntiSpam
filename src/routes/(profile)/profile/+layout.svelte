@@ -25,19 +25,31 @@
 					tag="a"
 					href='/profile/editor'
 					label="Page Editor"
-					value={1}>(icon)</AppRailTile
+					value={1}>
+					(icon)
+					</AppRailTile
 				>
 				<AppRailTile
 					tag="a"
-					href='/profile/products'
-					label="Products"
-					value={1}>(icon)</AppRailTile
+					href='/profile/payment'
+					label="Payment"
+					value={2}>
+					(icon)
+					</AppRailTile
+				>
+				<AppRailTile
+					tag="a"
+					href='/profile/messages'
+					label="Messages"
+					value={3}>
+					(icon)
+					</AppRailTile
 				>
 				<AppRailTile
 					tag="a"
 					href='/profile/analytics'
 					label="Analytics"
-					value={2}
+					value={4}
 				>
 					(icon)
 				</AppRailTile>
@@ -45,7 +57,7 @@
 					tag="a"
 					href='/profile/tracking'
 					label="Tracking"
-					value={3}
+					value={5}
 				>
 					(icon)
 				</AppRailTile>
@@ -55,7 +67,7 @@
 					tag="a"
 					href='/profile/settings'
 					label="Settings"
-					value={4}
+					value={6}
 				>
 					(icon)
 				</AppRailTile>
