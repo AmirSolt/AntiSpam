@@ -3,7 +3,6 @@
 	import type { PublicPageConfig } from '../config'
 
 	export let config: PublicPageConfig
-    export let listChangeUpdate:number
 
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton'
 
@@ -18,23 +17,28 @@
 	let newUrl: string = ''
 	let newLabel: string = ''
 	let newIcon: string = icons[0]
+
 	function urlChangeHandler() {
         // look up icon
 	}
 
-	function submitLink() {
-		const newLinkItem = new LinkItem({
-			link: newUrl,
-			icon: newLabel,
-			label: newIcon,
-		})
 
-		config.linkItems.unshift(newLinkItem)
-        listChangeUpdate++
-
+    function resetForm() {
         newUrl = ""
         newLabel = ""
         newIcon = icons[0]
+    }
+
+	function submitLink() {
+		const newLinkItem = new LinkItem({
+			link: newUrl,
+			icon: newIcon,
+			label: newLabel,
+		})
+
+		config.linkItems.unshift(newLinkItem);
+        config = config; // force update
+        resetForm();
 	}
 </script>
 

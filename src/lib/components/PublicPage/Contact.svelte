@@ -17,13 +17,13 @@
 
 
 	{#if editorMode}
-	
+	<div>	</div>
     {:else}
 		<label class="label">
 			<span>Email:</span>
 			<input class="input" type="text" placeholder="Input" />
 
-			<span>Get Your Message Seen:</span>
+			<span>Body:</span>
 			<textarea class="textarea " rows="4" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit." />
 		</label>
     {/if}
