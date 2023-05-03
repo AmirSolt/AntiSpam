@@ -47,25 +47,9 @@
 				>
 				<AppRailTile
 					tag="a"
-					href='/dashboard/wallet'
-					label="Wallet"
-					value={4}>
-					(icon)
-					</AppRailTile
-				>
-				<AppRailTile
-					tag="a"
 					href='/dashboard/analytics'
 					label="Analytics"
-					value={5}
-				>
-					(icon)
-				</AppRailTile>
-				<AppRailTile
-					tag="a"
-					href='/dashboard/tracking'
-					label="Tracking"
-					value={6}
+					value={4}
 				>
 					(icon)
 				</AppRailTile>
@@ -73,9 +57,9 @@
 			<svelte:fragment slot="trail">
 				<AppRailTile
 					tag="a"
-					href='/dashboard/settings'
-					label="Settings"
-					value={7}
+					href='/dashboard/account'
+					label="Account"
+					value={5}
 				>
 					(icon)
 				</AppRailTile>
