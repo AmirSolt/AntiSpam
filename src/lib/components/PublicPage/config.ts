@@ -48,21 +48,21 @@ export function getSamplePPC(): PublicPageConfig {
                 new LinkItem(
                     {
                         link:"https://tiktok.com/",
-                        icon:"fab fa-tiktok",
+                        icon:"tiktok",
                         label:"TikTok"
                     }
                 ),
                 new LinkItem(
                     {
                         link:"https://instagram.com/",
-                        icon:"fab fa-instagram",
+                        icon:"instagram",
                         label:"Instagram"
                     }
                 ),
                 new LinkItem(
                     {
                         link:"https://facebook.com/",
-                        icon:"fab fa-facebook",
+                        icon:"facebook",
                         label:"Facebook"
                     }
                 ),

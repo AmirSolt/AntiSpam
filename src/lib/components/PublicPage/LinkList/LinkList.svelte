@@ -2,9 +2,9 @@
 	export let editorMode = false
 	export let config
 
-	import AddLink from './utils/AddLink.svelte'
-	import DNDList from './utils/DNDList.svelte';
-    import LinkItem from './utils/LinkItem.svelte'
+	import AddLink from './AddLink.svelte'
+	import DNDList from './DNDList.svelte';
+    import LinkItem from './LinkItem.svelte'
 
 
 

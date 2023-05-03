@@ -7,9 +7,9 @@
     export let config: PublicPageConfig = getSamplePPC();
 
 
-    import Heading from './Heading.svelte';
-    import Contact from './Contact.svelte';
-    import LinkList from './LinkList.svelte';
+    import Heading from './Heading/Heading.svelte';
+    import Contact from './Contact/Contact.svelte';
+    import LinkList from './LinkList/LinkList.svelte';
 </script>
 
 

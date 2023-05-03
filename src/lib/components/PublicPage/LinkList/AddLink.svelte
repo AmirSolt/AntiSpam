@@ -1,38 +1,47 @@
 <script lang="ts">
+
+    import {Plus} from 'lucide-svelte'
 	import { LinkItem } from '../config'
 	import type { PublicPageConfig } from '../config'
-
-	export let config: PublicPageConfig
-
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton'
+    import SocialIcons from '@rodneylab/svelte-social-icons';
 
-	const icons = [
-		'fas fa-address-book',
-		'fas fa-address-card',
-		'fas fa-adjust',
-		'fas fa-align-center',
-		'fas fa-align-justify',
-	]
+
+    import {page} from '$app/stores'
+    const socialIcons = $page.data.socialIcons
+
+    
+	export let config: PublicPageConfig
+	
 
 	let newUrl: string = ''
 	let newLabel: string = ''
-	let newIcon: string = icons[0]
+	let newIconDomainName: string = Object.keys(socialIcons)[0]
 
+    function extractDomainName(url: string) {
+        // no subdomain, no extension
+        const domainName = url.match(/^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n]+)/im)
+        return domainName ? domainName[1] : null
+    }
+
+ 
 	function urlChangeHandler() {
-        // look up icon
+        const newDomainName = extractDomainName(newUrl);
+        if(newDomainName) 
+            newIconDomainName = newDomainName in socialIcons ? newDomainName : Object.keys(socialIcons)[0]
 	}
 
 
     function resetForm() {
         newUrl = ""
         newLabel = ""
-        newIcon = icons[0]
+        newIconDomainName = Object.keys(socialIcons)[0]
     }
 
 	function submitLink() {
 		const newLinkItem = new LinkItem({
 			link: newUrl,
-			icon: newIcon,
+			icon: socialIcons[newIconDomainName],
 			label: newLabel,
 		})
 
@@ -47,7 +56,7 @@
 <Accordion >
 	<AccordionItem >
 		<svelte:fragment slot="lead" >
-            <span class="btn-icon  variant-filled">+</span>
+            <span class="btn-icon  variant-filled"><Plus /></span>
         </svelte:fragment>
 		<svelte:fragment slot="summary">
             <span >Add Link</span> 
@@ -67,9 +76,11 @@
     
                 <label class="label">
                     <span>Icon</span>
-                    <select bind:value={newIcon} class="select">
-                        {#each icons as icon}
-                            <option value={icon}>{icon}</option>
+                    <select bind:value={newIconDomainName} class="select">
+                        {#each Object.entries(socialIcons) as [domainName, icon]}
+                            <option value={domainName}> 
+                                <SocialIcons network="{icon}" alt={domainName}/>
+                            </option>
                         {/each}
                     </select>
                 </label>

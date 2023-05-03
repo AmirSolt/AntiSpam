@@ -25,7 +25,7 @@
 	{#each items as item(item.id)}
     <li  animate:flip="{{duration: flipDurationMs}}">
 
-            <LinkItem linkItem={item.linkItem} editorMode={editorMode} />
+            <LinkItem bind:config linkItem={item.linkItem} editorMode={editorMode} />
     </li>
 	{/each}
     </ul>

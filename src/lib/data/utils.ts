@@ -1,23 +1,64 @@
 
+// domain name : media
+export const socialIcons = {
 
-export const socialIcons = [
-    {name: "TikTok", icon: "fab fa-tiktok", domain:"tiktok.com"},
-]
+'bandsintown':'bandsintown',
+'behance':'behance',
+'google_play':'google_play', // <<<<<
+'codepen':'codepen',
+'discord':'discord',
+'dribbble':'dribbble',
+'dropbox':'dropbox',
+'facebook':'facebook',
+'foursquare':'foursquare',
+'github':'github',
+'google':'google',
+'instagram':'instagram',
+'itch':'itch.io',
+'itunes':'itunes',
+'linkedin':'linkedin',
+'medium':'medium',
+'meetup':'meetup',
+'pinterest':'pinterest',
+'rdio':'rdio',
+'reddit':'reddit',
+'rss':'rss',
+'sharethis':'sharethis',
+'smugmug':'smugmug',
+'snapchat':'snapchat',
+'soundcloud':'soundcloud',
+'spotify':'spotify',
+'squarespace':'squarespace',
+'stackoverflow':'stackoverflow',
+'telegram':'telegram',
+'tiktok':'tiktok',
+'tumblr':'tumblr',
+'twitch':'twitch',
+'twitter':'twitter',
+'upwork':'upwork',
+'vevo':'vevo',
+'vimeo':'vimeo',
+'vine':'vine',
+'vk':'vk',
+'vsco':'vsco',
+'wechat':'wechat',
+'whatsapp':'whatsapp',
+'yelp':'yelp',
+'youtube':'youtube'
+}
 
+export const currencies:any = {
 
-export const currencies = [
-    {name: "USD", symbol: "$"},
-    {name: "EUR", symbol: "€"},
-    {name: "GBP", symbol: "£"},
-    {name: "CAD", symbol: "$"},
-    {name: "AUD", symbol: "$"},
-    {name: "JPY", symbol: "¥"},
-    {name: "CNY", symbol: "¥"},
-    {name: "INR", symbol: "₹"},
-    {name: "RUB", symbol: "₽"},
-    {name: "TRY", symbol: "₺"},
-    {name: "BRL", symbol: "R$"},
-    {name: "ZAR", symbol: "R"},
-    {name: "NGN", symbol: "₦"},
+    "USD": "$",
+    "EUR": "€",
+    "GBP": "£",
+    "AUD": "$",
+    "CAD": "$",
+    "JPY": "¥",
+    "CNY": "¥",
+    "NZD": "$",
+    "CHF": "Fr",
+    "HKD": "$",
     
-]
+
+}
