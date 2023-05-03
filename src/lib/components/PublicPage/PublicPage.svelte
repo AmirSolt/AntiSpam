@@ -1,44 +1,15 @@
 <script lang="ts">
 
-  import { PublicProfileConfig, LinkItem } from './config';
-
-
-
-  // ========================================
-
-  const linkItems: LinkItem[] = [
-    new LinkItem(
-      "https://tiktok.com/",
-      "fab fa-tiktok",
-      "TikTok"
-    ),
-    new LinkItem(
-      "https://instagram.com/",
-      "fab fa-instagram",
-      "Instagram"
-    ),
-    new LinkItem(
-      "https://twitter.com/",
-      "fab fa-twitter",
-      "Twitter"
-    ),
-]
-
-  const sampleConfig = new PublicProfileConfig(
-        "https://avatars.githubusercontent.com/u/81866624?s=400&u=1a4b0b0b9b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0&v=4",
-        linkItems,  
-    );
-
-  // ========================================
+  import { PublicPageConfig, LinkItem, getSamplePPC } from './config';
 
 
     export let editorMode: boolean = false;
-    export let config: PublicProfileConfig = sampleConfig;
+    export let config: PublicPageConfig = getSamplePPC();
 
 
     import Heading from './Heading.svelte';
     import Contact from './Contact.svelte';
-    import LinkLIst from './LinkLIst.svelte';
+    import LinkList from './LinkList.svelte';
 </script>
 
 
@@ -53,6 +24,6 @@
 <br>
 <br>
 
-<LinkLIst  editorMode={editorMode} config={config} />
+<LinkList  editorMode={editorMode} config={config} />
 
 
