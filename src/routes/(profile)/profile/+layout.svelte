@@ -31,16 +31,16 @@
 				>
 				<AppRailTile
 					tag="a"
-					href='/profile/payment'
-					label="Payment"
+					href='/profile/messages'
+					label="Messages"
 					value={2}>
 					(icon)
 					</AppRailTile
 				>
 				<AppRailTile
 					tag="a"
-					href='/profile/messages'
-					label="Messages"
+					href='/profile/wallet'
+					label="Wallet"
 					value={3}>
 					(icon)
 					</AppRailTile
