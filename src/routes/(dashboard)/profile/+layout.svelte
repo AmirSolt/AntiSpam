@@ -13,7 +13,7 @@
 			<svelte:fragment slot="lead">
 				<AppRailTile
 					tag="a"
-					href="/profile"
+					href="/dashboard"
 					label="Overview"
 					value={0}
 				>
@@ -23,7 +23,7 @@
 			<svelte:fragment slot="default">
 				<AppRailTile
 					tag="a"
-					href='/profile/editor'
+					href='/dashboard/editor'
 					label="Page Editor"
 					value={1}>
 					(icon)
@@ -31,33 +31,41 @@
 				>
 				<AppRailTile
 					tag="a"
-					href='/profile/messages'
-					label="Messages"
+					href='/dashboard/theme'
+					label="Theme"
 					value={2}>
 					(icon)
 					</AppRailTile
 				>
 				<AppRailTile
 					tag="a"
-					href='/profile/wallet'
-					label="Wallet"
+					href='/dashboard/messages'
+					label="Messages"
 					value={3}>
 					(icon)
 					</AppRailTile
 				>
 				<AppRailTile
 					tag="a"
-					href='/profile/analytics'
+					href='/dashboard/wallet'
+					label="Wallet"
+					value={4}>
+					(icon)
+					</AppRailTile
+				>
+				<AppRailTile
+					tag="a"
+					href='/dashboard/analytics'
 					label="Analytics"
-					value={4}
+					value={5}
 				>
 					(icon)
 				</AppRailTile>
 				<AppRailTile
 					tag="a"
-					href='/profile/tracking'
+					href='/dashboard/tracking'
 					label="Tracking"
-					value={5}
+					value={6}
 				>
 					(icon)
 				</AppRailTile>
@@ -65,9 +73,9 @@
 			<svelte:fragment slot="trail">
 				<AppRailTile
 					tag="a"
-					href='/profile/settings'
+					href='/dashboard/settings'
 					label="Settings"
-					value={6}
+					value={7}
 				>
 					(icon)
 				</AppRailTile>

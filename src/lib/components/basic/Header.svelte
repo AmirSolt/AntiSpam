@@ -4,6 +4,8 @@
 	import { AppBar, LightSwitch } from '@skeletonlabs/skeleton'
 	import { Flame } from 'lucide-svelte'
 
+	import {Home} from 'lucide-svelte'
+
 	$: user = $page.data.user
 </script>
 
@@ -20,7 +22,7 @@
 
 	<svelte:fragment slot="trail">
 		<a href="/pricing">Pricing</a>
-		<a href="/profile">Authed</a>
+		<a href="/dashboard"><Home /></a>
 		{#if user}
 			<form method="POST" action="/logout" use:enhance>
 				<button type="submit">Sign out</button>

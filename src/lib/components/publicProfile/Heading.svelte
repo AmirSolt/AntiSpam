@@ -11,9 +11,9 @@
 <Avatar src='{config.pfp}' width="w-32" rounded="rounded-full" />
 
 <h1>
-    @{config.name}
+    @{config.username}
 </h1>
 
 <p>
-    {config.desc}
+    {config.bio}
 </p>

@@ -33,14 +33,14 @@
     export let config: PublicProfileConfig = sampleConfig;
 
 
-    import Bio from '$lib/components/publicProfile/Bio.svelte';
+    import Heading from '$lib/components/publicProfile/Heading.svelte';
     import Contact from '$lib/components/publicProfile/Contact.svelte';
     import LinkLIst from '$lib/components/publicProfile/LinkLIst.svelte';
 </script>
 
 
 
-<Bio  editorMode={editorMode} config={config} />
+<Heading  editorMode={editorMode} config={config} />
 
 <br>
 <br>
