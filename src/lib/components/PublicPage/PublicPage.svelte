@@ -3,6 +3,9 @@
   import { PublicProfileConfig, LinkItem } from './config';
 
 
+
+  // ========================================
+
   const linkItems: LinkItem[] = [
     new LinkItem(
       "https://tiktok.com/",
@@ -26,16 +29,16 @@
         linkItems,  
     );
 
-
+  // ========================================
 
 
     export let editorMode: boolean = false;
     export let config: PublicProfileConfig = sampleConfig;
 
 
-    import Heading from '$lib/components/publicProfile/Heading.svelte';
-    import Contact from '$lib/components/publicProfile/Contact.svelte';
-    import LinkLIst from '$lib/components/publicProfile/LinkLIst.svelte';
+    import Heading from './Heading.svelte';
+    import Contact from './Contact.svelte';
+    import LinkLIst from './LinkLIst.svelte';
 </script>
 
 
