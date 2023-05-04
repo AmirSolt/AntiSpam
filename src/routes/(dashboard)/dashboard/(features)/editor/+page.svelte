@@ -2,7 +2,7 @@
     import PublicPage from '$lib/components/PublicPage/PublicPage.svelte';
     import { SlideToggle } from '@skeletonlabs/skeleton';
 
-    let editorMode:boolean = true;
+    let editorMode:boolean = false;
 </script>
 
 

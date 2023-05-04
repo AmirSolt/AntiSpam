@@ -23,7 +23,7 @@
 
 
 {#if editorMode}
-    <a  href="">
+    <a  href="#">
         <i><GripVertical /></i>
         <SocialIcons network="{linkItem.icon}" alt="Social Icon"/>
         <span>{linkItem.label}</span>

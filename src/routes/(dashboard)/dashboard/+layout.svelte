@@ -31,16 +31,16 @@
 				>
 				<AppRailTile
 					tag="a"
-					href='/dashboard/theme'
-					label="Theme"
+					href='/dashboard/messages'
+					label="Messages"
 					value={2}>
 					(icon)
 					</AppRailTile
 				>
 				<AppRailTile
 					tag="a"
-					href='/dashboard/messages'
-					label="Messages"
+					href='/dashboard/theme'
+					label="Theme"
 					value={3}>
 					(icon)
 					</AppRailTile

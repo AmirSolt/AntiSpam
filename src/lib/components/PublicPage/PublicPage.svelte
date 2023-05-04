@@ -1,29 +1,24 @@
 <script lang="ts">
 
-  import { PublicPageConfig, LinkItem, getSamplePPC } from './config';
 
 
-    export let editorMode: boolean = false;
-    export let config: PublicPageConfig = getSamplePPC();
+
+  export let editorMode: boolean = false;
 
 
-    import Heading from './Heading/Heading.svelte';
-    import Contact from './Contact/Contact.svelte';
-    import LinkList from './LinkList/LinkList.svelte';
+  import Bio from './Bio/Bio.svelte';
+  import Message from './Message/Message.svelte';
 </script>
 
 
 
-<Heading  editorMode={editorMode} config={config} />
+<Bio  editorMode={editorMode} />
 
 <br>
 <br>
 
-<Contact  editorMode={editorMode} config={config} />
+<Message  editorMode={editorMode}  />
 
-<br>
-<br>
 
-<LinkList  editorMode={editorMode} config={config} />
 
 

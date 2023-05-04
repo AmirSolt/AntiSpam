@@ -1,6 +1,6 @@
 
 // domain name : media
-export const socialIcons = {
+const socialIcons = {
 
 'bandsintown':'bandsintown',
 'behance':'behance',
@@ -49,16 +49,32 @@ export const socialIcons = {
 
 export const currencies:any = {
 
-    "USD": "$",
-    "EUR": "€",
-    "GBP": "£",
-    "AUD": "$",
-    "CAD": "$",
-    "JPY": "¥",
-    "CNY": "¥",
-    "NZD": "$",
-    "CHF": "Fr",
-    "HKD": "$",
-    
+
+
+    "USD":	"$",
+    "AED":	"د.إ",
+    "AUD":	"$",
+    "BGN":	"лв",
+    "BRL":	"R$",
+    "CAD":	"$",
+    "CHF":	"Fr",
+    "CZK":	"Kč",
+    "DKK":	"kr",
+    "EUR":	"€",
+    "GBP":	"£",
+    "HKD":	"$",
+    "HRK":	"kn",
+    "HUF":	"Ft",
+    "INR":	"₹",
+    "JPY":	"¥",
+    "MXN":	"$",
+    "MYR":	"RM",
+    "NOK":	"kr",
+    "NZD":	"$",
+    "PLN":	"zł",
+    "RON":	"lei",
+    "SEK":	"-kr.",
+    "SGD":	"$",
+    "THB": "฿",
 
 }
