@@ -31,8 +31,8 @@
 				>
 				<AppRailTile
 					tag="a"
-					href='/dashboard/messages'
-					label="Messages"
+					href='/dashboard/inbox'
+					label="Inbox"
 					value={2}>
 					(icon)
 					</AppRailTile

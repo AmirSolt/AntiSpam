@@ -24,7 +24,8 @@
 		<label class="label">
 			<!-- <span>Sender:</span> -->
 			<input class="input" type="text" placeholder="Email" />
-
+			
+			<input class="input" type="text" placeholder="Subject" bind:value={config.message.subject} />
 			<!-- <span>Body:</span> -->
 			<textarea class="textarea " rows="4" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit." />
 		</label>
